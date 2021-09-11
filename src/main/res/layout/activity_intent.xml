@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".IntentActivity">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="MissingConstraints"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleView"
+        android:text="Title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/imageView"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionView"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/titleView"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="114dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/descriptionView"
+        android:layout_alignStart="@+id/descriptionView"
+        android:layout_alignLeft="@+id/descriptionView"
+        android:layout_alignEnd="@+id/descriptionView"
+        android:layout_alignRight="@+id/descriptionView"
+        android:layout_alignBottom="@+id/titleView"
+        android:layout_marginStart="254dp"
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="-145dp"
+        android:text="Share" />
+
+</RelativeLayout>
